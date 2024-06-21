@@ -15,9 +15,7 @@ root.geometry('400x200')
 # Function for getting Input 
 # from textbox and printing it  
 # at label widget 
-  
-def saveInput(): 
-    inp = inputtxt1.get(1.0, "end-1c") 
+
     
 
 message = tk.Label(frame, text="Veuillez Introduire les indices d'impact ")
@@ -122,8 +120,7 @@ desc2.grid(column=0, row=4)   # grid dynamically divides the space in a grid
 inputtxt2.grid(column=1, row=4)
 # Button Creation 
 saveButton = tk.Button(frame, 
-                        text = "Save",  
-                        command = SaveInput) 
+                        text = "Save") 
 
 GenerateReport = tk.Button(frame, 
                         text = "Generer le rapport",  
