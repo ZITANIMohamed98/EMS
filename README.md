@@ -55,4 +55,5 @@ responsabilité de l&#39;aéroport envers ses parties prenantes.
 analyses comparatives aident les gestionnaires à prendre des décisions
 éclairées pour améliorer les performances environnementales.
 
-![image](https://github.com/ZITANIMohamed98/EMS/assets/60824720/c5f5a48e-6eda-4bc8-8405-5413bc46e311)
+![image](https://github.com/ZITANIMohamed98/EMS/assets/60824720/934121a3-9da7-4fb3-8cc1-41d39d523480)
+
