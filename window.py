@@ -9,9 +9,9 @@ root = Tk()
 frame = ttk.Frame(root, padding=10)
 frame.grid()
 
-root.title("EMS") 
-
-root.geometry('400x200') 
+root.title("Aerogest") 
+root.iconbitmap("resources/LOGO.ico")
+root.geometry('600x300') 
 # Function for getting Input 
 # from textbox and printing it  
 # at label widget 
@@ -19,8 +19,9 @@ root.geometry('400x200')
     
 
 message = tk.Label(frame, text="Veuillez Introduire les indices d'impact ")
+message.grid(column=0, row=0)
 Implbl = tk.Label(frame, text="Importance")
-
+Implbl.grid(column=0, row=1)
 ImpEaudesc = tk.Label(frame, text="Eau")
 
 # TextBox Creation 
@@ -28,103 +29,117 @@ ImpEau = tk.Text(frame,
                    height = 1, 
                    width = 5) 
 
-ImpEaudesc.grid(column=0, row=0)   # grid dynamically divides the space in a grid
-ImpEau.grid(column=1, row=0)
+ImpEaudesc.grid(column=0, row=2)   # grid dynamically divides the space in a grid
+ImpEau.grid(column=1, row=2)
  
-desc2 = tk.Label(frame, text="Bruit")
+ImpBruitdesc = tk.Label(frame, text="Bruit")
 
 # TextBox Creation 
-inputtxt2 = tk.Text(frame, 
+ImpBruit = tk.Text(frame, 
                    height = 1, 
                    width = 5) 
   
-desc2.grid(column=0, row=1)   # grid dynamically divides the space in a grid
-inputtxt2.grid(column=1, row=1)
+ImpBruitdesc.grid(column=0, row=3)   # grid dynamically divides the space in a grid
+ImpBruit.grid(column=1, row=3)
 
-desc2 = tk.Label(frame, text="Air")
+ImpAirdesc = tk.Label(frame, text="Air")
 
 # TextBox Creation 
-inputtxt2 = tk.Text(frame, 
+ImpAir = tk.Text(frame, 
                    height = 1, 
                    width = 5) 
   
-desc2.grid(column=0, row=2)   # grid dynamically divides the space in a grid
-inputtxt2.grid(column=1, row=2)
-desc2 = tk.Label(frame, text="Energie")
+ImpAirdesc.grid(column=0, row=4)   # grid dynamically divides the space in a grid
+ImpAir.grid(column=1, row=4)
+ImpEnergiedesc = tk.Label(frame, text="Energie")
 
 # TextBox Creation 
-inputtxt2 = tk.Text(frame, 
+ImpEnergie = tk.Text(frame, 
                    height = 1, 
                    width = 5) 
   
-desc2.grid(column=0, row=3)   # grid dynamically divides the space in a grid
-inputtxt2.grid(column=1, row=3)
-desc2 = tk.Label(frame, text="Dechets")
+ImpEnergiedesc.grid(column=0, row=5)   # grid dynamically divides the space in a grid
+ImpEnergie.grid(column=1, row=5)
+ImpDechetsdesc = tk.Label(frame, text="Dechets")
 
 # TextBox Creation 
-inputtxt2 = tk.Text(frame, 
+ImpDechets = tk.Text(frame, 
                    height = 1, 
                    width = 5) 
   
-desc2.grid(column=0, row=4)   # grid dynamically divides the space in a grid
-inputtxt2.grid(column=1, row=4)
+ImpDechetsdesc.grid(column=0, row=6)   # grid dynamically divides the space in a grid
+ImpDechets.grid(column=1, row=6)
+PlaceHolder1 = tk.Label(frame, text=" ")
+PlaceHolder1.grid(column=3, row=1)
 
-Implbl = tk.Label(frame, text="\Maitrise")
+PlaceHolder2 = tk.Label(frame, text=" ")
+PlaceHolder2.grid(column=3, row=2)
+PlaceHolder3 = tk.Label(frame, text=" ")
+PlaceHolder3.grid(column=3, row=3)
+PlaceHolder4 = tk.Label(frame, text=" ")
+PlaceHolder4.grid(column=3, row=4)
+PlaceHolder5 = tk.Label(frame, text=" ")
+PlaceHolder5.grid(column=3, row=5)
+PlaceHolder6 = tk.Label(frame, text=" ")
+PlaceHolder6.grid(column=3, row=6)
 
-ImpEaudesc = tk.Label(frame, text="Eau")
+Maitlbl = tk.Label(frame, text="Maitrise")
+Maitlbl.grid(column=5, row=1)
+MaitEaudesc = tk.Label(frame, text="Eau")
 
 # TextBox Creation 
-ImpEau = tk.Text(frame, 
+MaitEau = tk.Text(frame, 
                    height = 1, 
                    width = 5) 
 
-ImpEaudesc.grid(column=0, row=0)   # grid dynamically divides the space in a grid
-ImpEau.grid(column=1, row=0)
+MaitEaudesc.grid(column=5, row=2)   # grid dynamically divides the space in a grid
+MaitEau.grid(column=6, row=2)
  
-desc2 = tk.Label(frame, text="Bruit")
+MaitBruitdesc = tk.Label(frame, text="Bruit")
 
 # TextBox Creation 
-inputtxt2 = tk.Text(frame, 
+MaitBruit = tk.Text(frame, 
                    height = 1, 
                    width = 5) 
   
-desc2.grid(column=0, row=1)   # grid dynamically divides the space in a grid
-inputtxt2.grid(column=1, row=1)
+MaitBruitdesc.grid(column=5, row=3)   # grid dynamically divides the space in a grid
+MaitBruit.grid(column=6, row=3)
 
-desc2 = tk.Label(frame, text="Air")
+MaitAirdesc = tk.Label(frame, text="Air")
 
 # TextBox Creation 
-inputtxt2 = tk.Text(frame, 
+MaitAir = tk.Text(frame, 
                    height = 1, 
                    width = 5) 
   
-desc2.grid(column=0, row=2)   # grid dynamically divides the space in a grid
-inputtxt2.grid(column=1, row=2)
-desc2 = tk.Label(frame, text="Energie")
+MaitAirdesc.grid(column=5, row=4)   # grid dynamically divides the space in a grid
+MaitAir.grid(column=6, row=4)
+MaitEnergiedesc = tk.Label(frame, text="Energie")
 
 # TextBox Creation 
-inputtxt2 = tk.Text(frame, 
+MaitEnergie = tk.Text(frame, 
                    height = 1, 
                    width = 5) 
   
-desc2.grid(column=0, row=3)   # grid dynamically divides the space in a grid
-inputtxt2.grid(column=1, row=3)
-desc2 = tk.Label(frame, text="Dechets")
+MaitEnergiedesc.grid(column=5, row=5)   # grid dynamically divides the space in a grid
+MaitEnergie.grid(column=6, row=5)
+MaitDechetdesc = tk.Label(frame, text="Dechets")
 
 # TextBox Creation 
-inputtxt2 = tk.Text(frame, 
+MaitDechet = tk.Text(frame, 
                    height = 1, 
                    width = 5) 
   
-desc2.grid(column=0, row=4)   # grid dynamically divides the space in a grid
-inputtxt2.grid(column=1, row=4)
+MaitDechetdesc.grid(column=5, row=6)   # grid dynamically divides the space in a grid
+MaitDechet.grid(column=6, row=6)
 # Button Creation 
 saveButton = tk.Button(frame, 
                         text = "Save") 
-
+saveButton.grid(column=1, row=7)
 GenerateReport = tk.Button(frame, 
                         text = "Generer le rapport",  
                         command = main(file))
+GenerateReport.grid(column=6, row=7)
 # Label Creation 
 lbl = tk.Label(frame, text = "") 
 
