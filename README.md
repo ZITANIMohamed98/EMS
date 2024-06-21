@@ -56,4 +56,5 @@ analyses comparatives aident les gestionnaires à prendre des décisions
 éclairées pour améliorer les performances environnementales.
 
 ![image](https://github.com/ZITANIMohamed98/EMS/assets/60824720/934121a3-9da7-4fb3-8cc1-41d39d523480)
+![image](https://github.com/ZITANIMohamed98/EMS/assets/60824720/6206a614-5af6-44b8-ae72-a0717606ffd8)
 
