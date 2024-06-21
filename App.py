@@ -93,15 +93,13 @@ def main(file):
         pdf.image("resources/rapportHebdomadaire.png", 5, 130, WIDTH)
         
         # Add some words to PDF
-        write_to_pdf(pdf, "Eau : Suivi de la consommation d'eau, detection des fuites, et gestion des eaux usees.")
+        write_to_pdf(pdf, "de 1 à 5: Acceptable")
         pdf.ln(5)
-        write_to_pdf(pdf, "analyse des sources de bruit et proposition de mesures d'attenuation.")
+        write_to_pdf(pdf, "de 6 à 10: Surveillance nécessaire ")
         pdf.ln(5)
-        write_to_pdf(pdf, "Air : Surveillance de la qualite de l'air, mesure des emissions de CO2 et autres polluants, et mise en oeuvre de strategies pour reduire les emissions.")
+        write_to_pdf(pdf, "de 10 à 15: Actions correctives nécessaires")
         pdf.ln(5)
-        write_to_pdf(pdf, "Energie : Controle de la consommation d'energie, promotion de l'efficacite energetique et utilisation des energies renouvelables.")
-        pdf.ln(5)
-        write_to_pdf(pdf, "Dechets : Gestion des déchets solides et liquides, promotion du recyclage et de la reduction des dechets.")
+        write_to_pdf(pdf, "de 15 à 25: Inacceptable, actions immédiates requises")
         pdf.ln(5)
 
         
