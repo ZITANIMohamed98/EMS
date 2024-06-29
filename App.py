@@ -113,5 +113,3 @@ def main(file):
 
         # Generate the PDF
         pdf.output("rapport_h.pdf", 'F')
-        
-main("data.json")
